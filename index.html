@@ -236,7 +236,8 @@
             right: 2px;
             z-index: 1;
         }
-        .mol .actions2 button,a{
+        .mol .actions2 a{
+            background-color: WHITE;
             color: #888888;
             text-decoration: none;
         }
@@ -246,12 +247,13 @@
             justify-content: space-between;
             padding: 0;
             margin: 0;
+            background-color: WHITE;
             align-items: center;
             left: 10px;
         }
-        .mol .actions2 button{
+        .mol .actions2 A{
             position: relative;
-            background-color: #f0f0f0;
+            background-color: #ffffff;
             border: none;
             width: 90px;
             color: #888888;
@@ -260,11 +262,13 @@
             font-size: 12px;
             cursor: pointer;
             top: 0;
+            z-index: 4;
         }
         .mol .actions2 .mt{
-            width: 105px;
-            color: black;
+            position: relative;
+            right: -65px;
         }
+        
 
         .mol .social {
             display: flex;
@@ -422,7 +426,7 @@
 
 /*manage tickets popup css down here*/
 #manaa{
-    display: none;
+    display: noe;
     z-index: 999999;
     top: 800px;
     right: 0;
@@ -455,7 +459,7 @@
     border-top-right-radius: 10px;
     border:none;
     overflow: hidden;
-    box-shadow: 2px 0px 600px 00px rgba(0,0,0,1);
+    box-shadow: 2px 0px 500px 350px rgba(0,0,0,1);
    
 }
 
@@ -645,7 +649,7 @@ a{
     left: 0;
 }
 .spacey2 .label2,.dot2{
-    left: 10px;
+    left: 1px;
     position: relative;
     top: 15px;
 }
@@ -873,12 +877,12 @@ input[type=radio]:checked + .first-btn .btn{
 
                                
                                     <div class="actions2">
-                                        <button><a  href="3tickets.html">
+                                        <a  href="3tickets.html">
                                          View tickets
-                                         </a></button>
-                                         <button class="mt"><a  href="#" onclick="document.getElementById('manaa').style.display='block'">
+                                         </a>
+                                       <a  href="#"  class="mt" onclick="document.getElementById('manaa').style.display='block'">
                                             Manage transfers
-                                        </a></button>
+                                        </a>
                                      </div>
                                 
                                 <div class="social">
@@ -944,12 +948,12 @@ input[type=radio]:checked + .first-btn .btn{
                             <div class="mol ">
 
                                 <div class="actions2">
-                                   <button><a  href="2tickets.html">
+                                   <a  href="2tickets.html">
                                     View tickets
-                                    </a></button>
-                                        <button class="mt"><a  href="manage.html">
+                                    </a>
+                                        <a  href="manage.html" class="mt">
                                         Manage transfers
-                                    </a></button>
+                                    </a>
                                 </div>
                                 <div class="social">
                                     <i class="fab fa-facebook">
